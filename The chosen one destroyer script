@@ -1,0 +1,113 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "THE CHOSEN ONE DESTROYER", HidePremium = false,IntroText = "THE CHOSEN ONE DESTROYER", SaveConfig = true, ConfigFolder = "THE CHOSEN ONE DESTROYER"})
+
+OrionLib:MakeNotification({
+	Name = "Credits",
+	Content = "Made by EXXITY",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+OrionLib:MakeNotification({
+	Name = "Thanks for using my script",
+	Content = "Now go troll some kids!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local FunTab = Window:MakeTab({
+	Name = "Fun",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local MiscTab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local CrashTab = Window:MakeTab({
+	Name = "Crash",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local GearsTab = Window:MakeTab({
+	Name = "Gears",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = FunTab:AddSection({
+	Name = "Fun stuff"
+})
+
+local Section = MiscTab:AddSection({
+	Name = "Other stuff"
+})
+
+local Section = CrashTab:AddSection({
+	Name = "Crash the game"
+})
+
+FunTab:AddButton({
+	Name = "Use Tools (PRESS E TO ACTIVATE)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-3/main/Multi%20gear%20activator.lua"))()
+  	end    
+})
+
+MiscTab:AddButton({
+	Name = "Keyboard (Mobile)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
+  	end    
+})
+
+GearsTab:AddButton({
+	Name = "Op gears",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/m8DawkZr"))()
+  	end    
+})
+
+GearsTab:AddButton({
+	Name = "All Periastrons",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/3b5EfseK"))()
+  	end    
+})
+
+GearsTab:AddButton({
+	Name = "Gears that can kill ff",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/pCm5erAn"))()
+  	end    
+
+MiscTab:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+  	end    
+})
+
+FunTab:AddButton({
+	Name = "Nukes",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/VDtz48B9"))()
+  	end    
+})
+
+CrashTab:AddButton({
+	Name = "Crash (Spam the Ability of the gear Do it while glitched)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/1GaNu8tE"))()
+  	end    
+})
+
+
+
+
+
+OrionLib:Init()
